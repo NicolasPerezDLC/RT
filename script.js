@@ -29,7 +29,7 @@ startButton.onclick = () => {
 
 // }
 
-// --------------------------------- timer --------------------------------- //
+// --------------------------------- 3,2,1 timer i tired doing it worked can be better with a for loop --------------------------------- //
 
 // let timerThree = document.getElementById('three')
 // let timerTwo = document.getElementById('two')
@@ -76,7 +76,25 @@ function generateBall () {
     for (let index = 0; index < 10; index++) {
         let x= Math.floor((Math.random()*5)+1);
         console.log(x);
-        document.getElementById('redBall').innerHTML+='<img src="img/redball${x}.jpeg" style="width:200px;" '
+        document.getElementById('redBall').innerHTML+='<img src="https://www.pngkit.com/png/full/123-1231528_red-ball-png-big-red-dot.png" style="width:200px;" '
         
     }
 }
+
+// my attempt to generate a target ^ //
+
+function generate() {
+
+    createCanvas(640,360);
+
+    for (let i = 0; i < 50; i++) {
+    let x = Math.floor(Math.random(width));
+    let y = Math.floor(Math.random(height));
+    let r = 48;
+    fill(255, 0, 150); 
+    ellipse(x, y, r*2, r*2);
+    }
+}
+
+// a tutorial I watched by code train ^ didnt work //
+
